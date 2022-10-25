@@ -1,0 +1,142 @@
+* {
+  font-size: 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+* body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(210deg, 60%, 98%);
+}
+* body main {
+  display: flex;
+  width: 340px;
+  background-color: hwb(0 100% 0%);
+  border-radius: 0.8rem;
+  padding: 0 1.3rem;
+}
+* body main .notification-wrapper .notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+* body main .notification-wrapper .notification-header .notification-counter {
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+* body main .notification-wrapper .notification-header .notification-counter span {
+  display: inline-flex;
+  font-size: 1rem;
+  color: hwb(0 100% 0%);
+  background-color: hsl(219deg, 85%, 26%);
+  padding: 0.1rem 0.7rem;
+  margin-left: 0.4rem;
+  border-radius: 20%;
+}
+* body main .notification-wrapper .notification-header button.btn-text {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  color: hsl(219deg, 12%, 42%);
+}
+* body main .notification-wrapper .notification-header button.btn-text:hover {
+  color: hsl(219deg, 85%, 26%);
+  cursor: pointer;
+}
+* body main .notification-wrapper .notification-body .notification-item {
+  display: flex;
+  color: hsl(219deg, 12%, 42%);
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  margin-bottom: 0.7rem;
+}
+* body main .notification-wrapper .notification-body .notification-item img.avatar {
+  height: 42px;
+  margin-right: 1rem;
+}
+* body main .notification-wrapper .notification-body .notification-item-body {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+* body main .notification-wrapper .notification-body .notification-item-body .description {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  position: relative;
+}
+* body main .notification-wrapper .notification-body .notification-item-body .description a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: inherit;
+  color: hsl(219deg, 85%, 26%);
+}
+* body main .notification-wrapper .notification-body .notification-item-body .description a.profile {
+  color: black;
+}
+* body main .notification-wrapper .notification-body .notification-item-body .description a:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+* body main .notification-wrapper .notification-body .notification-item-body .description a.profile {
+  margin-right: 0.2rem;
+}
+* body main .notification-wrapper .notification-body .notification-item-body .description p {
+  font-size: 0.85rem;
+}
+* body main .notification-wrapper .notification-body .notification-item-body .side a img {
+  height: 2.5rem;
+  border: 2px solid transparent;
+  margin-left: 1rem;
+}
+* body main .notification-wrapper .notification-body .notification-item-body .side a img:hover {
+  border: 2px solid hsl(210deg, 60%, 98%);
+  border-radius: 20%;
+}
+* body main .notification-wrapper .notification-body .notification-item-body .message {
+  font-size: 0.9rem;
+  border: 2px solid hsl(210deg, 60%, 98%);
+  border-radius: 0.25rem;
+  margin-top: 0.8rem;
+  padding: 0.8rem;
+}
+* body main .notification-wrapper .notification-body .notification-item-body .message:hover {
+  background-color: hsl(210deg, 60%, 98%);
+  cursor: pointer;
+}
+* body main .notification-wrapper .notification-body .notification-item-body .time {
+  color: hsl(203deg, 14%, 75%);
+  padding-top: 0.3rem;
+  font-size: 0.9rem;
+}
+* body main .notification-wrapper .notification-body .notification-unread {
+  background-color: hsl(210deg, 60%, 98%);
+}
+* body main .notification-wrapper .notification-body .notification-unread .description p::after {
+  content: "";
+  display: inline-block;
+  background-color: hsl(1deg, 90%, 64%);
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-left: 0.3rem;
+  margin-bottom: 0.07rem;
+}
+
+@media (min-width: 720px) {
+  * {
+    font-size: 19px;
+  }
+  * body main {
+    width: 700px;
+  }
+  * body main .notification-wrapper .notification-body .notification-item {
+    margin-bottom: 0.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
